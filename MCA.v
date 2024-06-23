@@ -120,7 +120,7 @@ module MCA();
         //$dumpfile("MCA.vcd");
         //$dumpvars(0, MCA);
 
-        $readmemh("Co.hex", Co_data);
+        $readmemh("data/Co.hex", Co_data);
         Co_data_size = 1024;
         randomCount = 0;
         sum = 0;
@@ -158,14 +158,14 @@ module MCA();
         $display("peak_count = %d", peak_count);
 
         // 写入文件
-        fd = $fopen("./out.hex", "w");
+        fd = $fopen("data/out.hex", "w");
         for (k = 0; k < 1024; k = k + 1) begin
             $fwrite(fd, "%d\n", count[k]);
         end
         $fclose(fd);
         $display("count_sum = %d", count_sum);
 
-        fd = $fopen("./peak.hex", "w");
+        fd = $fopen("data/peak.hex", "w");
         for (k = 0; k < peak_count; k = k + 1) begin
             $fwrite(fd, "%d\n", peak[k]);
         end
