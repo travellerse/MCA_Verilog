@@ -22,13 +22,13 @@ Verilog模块中使用了rst信号进行控制。初始化后，rst被置为0，
 ### 能谱显示:
 Python脚本利用matplotlib库显示能谱数据，并在能谱图中标示出寻找到的峰值。
 
-![image](origin.png) 
+![image](Images/origin.png) 
 原始能谱
 
-![image](mca.png) 
+![image](Images/mca.png) 
 平滑后的能谱
 
-![image](peak.png) 
+![image](Images/peak.png) 
 能谱寻峰结果
 
 蓝色线为寻峰算法对能谱数据的打分（分值越高，则认为在这里存在峰的可能越大），橙色色线为能谱数据。
@@ -41,7 +41,7 @@ Python脚本利用matplotlib库显示能谱数据，并在能谱图中标示出�
 1. 通过对称零区面积峰值算法，找到能谱中的峰值；
 2. 通过非极大值抑制算法，对峰值进行优化。
 
-![image](c.png) 使用C#实现的光谱仪软件界面(https://github.com/travellerse/SpectrographWPF)
+![image](Images/c.png) 使用C#实现的光谱仪软件界面(https://github.com/travellerse/SpectrographWPF)
 
 ## 编程环境
 - Verilog仿真环境：iverilog + vscode + WaveTrace(Vscode插件)
