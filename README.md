@@ -1,5 +1,8 @@
 # 多道脉冲高度分析器（MCA）仿真器
 
+## git仓库地址
+https://github.com/travellerse/MCA_Verilog
+
 ## 设计概述
 本项目实现了一个多道脉冲高度分析器（Multi-Channel Analyzer, MCA），使用Verilog和Python实现。MCA的主要功能包括启停控制、复位控制、PHA（Pulse Height Analysis）方式分析随机脉冲高度、能谱统计、能谱数据存储、能谱平滑处理、能谱显示以及能谱寻峰功能。
 
